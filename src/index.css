@@ -28,3 +28,20 @@ code {
   left: -20px;
   top: -50px;
 }
+
+.top-card {
+  border: 1px solid gray;
+}
+
+.top-card label {
+  cursor: pointer;
+}
+
+.top-card:has(input:checked) {
+  box-shadow: 0 0 15px white;
+  border: 1px solid white;
+}
+
+.top-card input {
+  display: none;
+}

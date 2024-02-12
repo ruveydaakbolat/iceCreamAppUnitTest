@@ -13,7 +13,7 @@ const Card = ({item, basket, setBasket}) => {
 
       <div className="d-flex gap-2 mt-4 align-items-center">
         <button onClick={handleReset} className="btn btn-sm btn-outline-danger">Sıfırla</button>
-        <span className="fs-2">{amount}</span>
+        <span data-testid="amount" className="fs-2">{amount}</span>
         <button onClick={() => setBasket([...basket, item])} className="btn btn-sm btn-outline-success">Ekle</button>
       </div>
     </div>
